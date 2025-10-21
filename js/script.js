@@ -23,3 +23,9 @@ function loadPieces() {
 }
 
 window.onload = loadPieces;
+
+
+function resetPuzzle() {
+    pieces.forEach(id => localStorage.removeItem(id));
+    location.reload();
+}
